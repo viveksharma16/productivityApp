@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#B8B5B5"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <FrameLayout
+        android:id="@+id/simpleFrameLayout"
+        android:layout_width="410dp"
+        android:layout_height="848dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/simpleTabLayout"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            app:tabBackground="@color/blue"
+            app:tabIndicatorColor="@color/lightblue"
+            app:tabSelectedTextColor="#FFFFFF"
+            app:tabTextColor="@color/white"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/txtWelcome"
+        android:layout_width="378dp"
+        android:layout_height="83dp"
+        android:fontFamily="@font/alike"
+        android:text="Welcome To The Homework Planner!"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="34sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.515"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.541" />
+
+    <Button
+        android:id="@+id/pick_color_button"
+        android:layout_width="247dp"
+        android:layout_height="39dp"
+        android:layout_gravity="center"
+        android:background="#17354f"
+        android:backgroundTint="#17354f"
+        android:text="Pick Background Theme"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.21"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <Button
+        android:id="@+id/set_color_button"
+        android:layout_width="92dp"
+        android:layout_height="35dp"
+        android:layout_gravity="center"
+        android:background="#17354f"
+        android:backgroundTint="#17354f"
+        android:text="Set Color"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.457"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.372"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/txtYourColorIs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="@font/alike"
+        android:text="Preview:"
+        android:textColor="#17354f"
+        android:textSize="18sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.36"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.299" />
+
+    <View
+        android:id="@+id/preview_selected_color"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_gravity="center"
+        android:background="@android:color/darker_gray"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.561"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.291" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
